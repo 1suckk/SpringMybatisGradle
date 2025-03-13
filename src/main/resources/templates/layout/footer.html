@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html layout:decorate="~{layout/layoutMain}">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,8 @@
 	</style>
 </head>
 <body>
-	<div layout:fragment="content">
-		<h4 class="alert alert-info">사원목록</h4>
+	<div th:fragment="footerFragment" style="position: fixed; bottom: 0px; text-align: center; width: 100%;">
+		<h5 class="alert alert-warning">우리은행 02-1234-5678</h5>
 	</div>
 </body>
 </html>
