@@ -1,20 +1,19 @@
 server:
   port: 8080
-  
-#jsp setting
-spring:
-  mvc:
-    view:
-      prefix: /WEB-INF/
-      suffix: .jsp
 
 #mysql setting
+spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://db-324o9o-kr.vpc-pub-cdb.ntruss.com:3306/studydb?serverTimezone=Asia/Seoul
     username: study
     password: bitcamp!@#123
 
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 30MB
+  
 #mybatis setting
 mybatis:
   type-aliases-package: data.dto
